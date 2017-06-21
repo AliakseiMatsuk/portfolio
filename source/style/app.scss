@@ -1,5 +1,35 @@
+@import 'common/variables';
+
+@font-face {
+	font-family: $titleFont;
+	src: url('../fonts/'+ $titleFont +'-Regular.otf');
+}
+
+html{
+	font-size:16px;
+	font-family: $mainFont, sans-serif;
+	color:$mainTextColor;
+	a{
+		color:$linkColor;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
 body {
   margin: 0;
 }
-
+.title,
+.subtitle{
+	font-family: $titleFont;
+}
+.title{
+	font-size: 3.9375rem;
+	color:$titleColor;
+}
+.subtitle{
+	font-size: 2.1875rem;
+	color: $subTitleColor;
+}
 //@import 'common/sprite-img';
+
