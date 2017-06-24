@@ -1,35 +1,26 @@
+//includes
 @import 'common/variables';
+@import "common/fonts";
+@import "mixins/mixins";
+@import "common/base";
+@import 'common/sprite-img';
 
-@font-face {
-	font-family: $titleFont;
-	src: url('../fonts/'+ $titleFont +'-Regular.otf');
-}
+@import 'blocks/about';
+@import 'blocks/arrow-down';
+@import 'blocks/title';
+@import 'blocks/subtitle';
+@import 'blocks/hero';
+@import 'blocks/section-title';
+@import 'blocks/section';
+@import 'blocks/triangle';
+@import 'blocks/user';
+@import 'blocks/skills';
+@import 'blocks/circle';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+@import 'blocks/menu';
+@import 'blocks/socials';
 
-html{
-	font-size:16px;
-	font-family: $mainFont, sans-serif;
-	color:$mainTextColor;
-	a{
-		color:$linkColor;
-		&:hover{
-			text-decoration: none;
-		}
-	}
-}
-body {
-  margin: 0;
-}
-.title,
-.subtitle{
-	font-family: $titleFont;
-}
-.title{
-	font-size: 3.9375rem;
-	color:$titleColor;
-}
-.subtitle{
-	font-size: 2.1875rem;
-	color: $subTitleColor;
-}
-//@import 'common/sprite-img';
+
+
 

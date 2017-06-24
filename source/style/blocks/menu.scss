@@ -1,0 +1,14 @@
+.menu {
+    &__item {
+    	display: inline-block;
+    	&:not(:last-child){
+    		margin-right:40px;
+    	}
+    }
+    &__link {
+        color: #ffffff;
+        font-size: 0.986rem;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}

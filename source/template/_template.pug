@@ -1,5 +1,9 @@
 block variables
-
+include blocks/socials
+include blocks/title
+include blocks/skills
+include blocks/menu
+include common/content
 doctype html
 
 html
@@ -12,7 +16,6 @@ html
 		meta(content="ie=edge" http-equiv="x-ua-compatible")
 		include common/meta
 		link(rel="icon" href="favicon.ico" type="image/x-icon")
-		link(href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet")
 		link(rel="stylesheet" href="/assets/css/foundation.css")
 		link(rel="stylesheet" href="/assets/css/app.css")
 		script(src="/assets/js/foundation.js" defer)
@@ -23,7 +26,8 @@ html
 		<![endif]-->
 
 	body
-		block content
+		.wrapper
+			block content
 
 
 

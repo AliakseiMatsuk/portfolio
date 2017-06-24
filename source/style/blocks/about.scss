@@ -1,0 +1,25 @@
+.about {
+    @extend %clearfix;
+    &__left,
+    &__right {
+        float: left;
+        width: 50%;
+        position: relative;
+        padding:20px;
+    }
+    &__left {
+        background: $white;
+    }
+    &__left-triangle{
+    	left:0;
+    }
+    &__right {
+        background: $beige;
+    }
+    &__right-triangle{
+    	right:0;
+    }
+    &__right-title{
+    	text-align:center;
+    }
+}
