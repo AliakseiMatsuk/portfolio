@@ -1,0 +1,48 @@
+extends ../_template
+
+block variables
+	- var title = ['login','login','login']
+
+block content
+	.login-form
+		form
+			.login-form__title
+				.subtitle авторизуйтесь
+			.login-form__list
+				.login-form__item
+					span.login-icon
+					input.login-form__input.login(type="text",placeholder="Логин")
+				.login-form__item
+					span.password-icon
+					input.login-form__input(type="text", placeholder="Пароль")
+				.login__capcha
+					label Я человек
+					input(type="checkbox")
+				.login__robot.robot
+					.robot__title Вы точно не робот
+					ul
+						li.robot__item
+							label.robot__label Да
+							input(type="radio")
+						li.robot__item
+							label.robot__label Не уверен
+							input(type="radio")
+			.forms-button
+				a(href="#")
+					button.forms-button__item На главную
+				a(href="#")
+					input.forms-button__item(type="submit", value="Войти")
+	.welcome
+		.welcome-pic
+			img(src="", alt="")
+		.welcome__title Владимир Астахов
+		.welcome__subtitle Личный сайт веб разработчика
+		.welcome__socials
+			+socials('default',socials)
+		.forms-button
+			a(href="#")
+				button.forms-button__item(type="submit") Мои работы
+			a(href="#")
+				button.forms-button__item Обо мне
+			a(href="#")
+				button.forms-button__item Блог

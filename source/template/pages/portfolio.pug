@@ -1,6 +1,86 @@
 extends ../_template
 
 block variables
-	- var title = ['title','keywords','description']
+	- var title = ['portfolio','portfolio','portfolio']
 
 block content
+	include ../blocks/hero
+	section.section.works
+		.works__left
+			.triangle.triangle_fill_works.works__left-triangle
+				svg.triangle__svg(viewbox="0 0 1000 100" preserveAspectRatio="none")
+					polygon(points="0 100,1000 100,0 0")
+		.works__right
+			.triangle.triangle_fill_works.works__right-triangle
+				svg.triangle__svg(viewbox="0 0 1000 100" preserveAspectRatio="none")
+					polygon(points="0 100,1000 100,1000 0")
+		.works__row
+			.works-row__title
+				+title('works_header','Мои работы')
+		.works__slider.works-slider
+			.works-slider__left
+				.work__desc
+					.works__left-title
+						.subtitle сайт школы онлайн образования
+					.works__tech
+						.tech-list HTML, CSS, JAVASCRIPT
+					.works__show-work
+						a(href="#")
+							button.btn Посмотреть сайт
+			.works-slider__right.slider-right
+				.slider-right__top
+					img.slider-right__top-pic(src="assets/img/content/work-main-pic.png")
+				.slider-right__bottom
+					.slider-right__bottom-left
+						img.slider-right__top-pic(src="assets/img/content/work-left.png")
+						.slider-right__nav.prev
+							svg.slider-right__nav-pic
+								use(xlink:href="assets/img/sprite.svg#arrow-down")
+					.slider-right__bottom-right
+						img.slider-right__top-pic(src="assets/img/content/work-right.png")
+						.slider-right__nav.next
+							svg.slider-right__nav-pic
+								use(xlink:href="assets/img/sprite.svg#arrow-down")
+	section.section.reviews
+		.reviews__bg
+			img(src="assets/img/bg/works-bg.png")
+		.reviews__title
+			+title('about_header','Что обо мне говорят')
+		.reviews__row
+			.reviews__list.reviews-list
+				.reviews-list__item.review
+					.review__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+					.review__writer
+						.review__pic
+							img(src="assets/img/content/dmitrii.png", alt="Ковальчук Дмитрий" title="Ковальчук Дмитрий")
+						.review__desc
+							.review__title Ковальчук Дмитрий
+							.review__subtitle основатель Loftschool
+				.reviews-list__item.review
+					.review__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+					.review__writer
+						.review__pic
+							img(src="assets/img/content/vladimir.png", alt="Сабанцев Владимир" title="Сабанцев Владимир")
+						.review__desc
+							.review__title Сабанцев Владимир
+							.review__subtitle преподаватель
+		.reviews__form.review-form
+			.review-form__title
+				.subtitle связаться со мной
+			form
+				ul.review-form__list
+					li.review-form__item
+						input.review-form__input(type="text" placeholder="Имя")
+					li.review-form__item
+						input.review-form__input(type="text" placeholder="Email")
+					li.review-form__item
+						textarea.review-form__textarea(type="text" placeholder="Ваше сообщение")
+				.review-form__buttons.forms-button
+					input.forms-button__item(type="submit" value="Отправить")
+					input.forms-button__item(type="reset" value="Очистить")
+		.reviews__scroll-up
+			svg.arrow-scroll
+				use(xlink:href="assets/img/sprite.svg#arrow-down")
+	include ../blocks/footer
+
+

@@ -1,32 +1,14 @@
 extends ../_template
 
 block variables
+	- var title = ['About me','About me','About me']
 block content
-	section.section.hero
-		img.hero__bg(src="assets/img/bg/header-bg.png")
-		.hero__container
-			header.header.hero__header
-				.hero__socials
-					+socials('default',socials)
-				.hamburger.hero__menu
-			.arrow-down.hero__scroll-button
-				svg.arrow-down__pic
-					use(xlink:href="assets/img/sprite.svg#arrow-down")
-			.hero__title
-				.section-title
-					svg.section-title__pic
-						use(xlink:href="assets/img/sprite.svg#portfolio-header")
-				.user.hero__user
-					.user__pic
-						img(src="/assets/img/content/hero-photo.png", alt="").user__pic-img
-					.user__description
-					.user__name Владимир Астахов
-					.user__desc Личный сайт разработчика
+	include ../blocks/hero
 	section.section.about
 		.about__left
 			.triangle.triangle_fill_white.about__left-triangle
-				svg.triangle__svg(viewbox="0 0 1000 150" preserveAspectRatio="none")
-					polygon(points="0,0 0,150 1000,150")
+				svg.triangle__svg(viewbox="0 0 1000 100" preserveAspectRatio="none")
+					polygon(points="0 100,1000 100,0 0")
 			.about__left-title
 				+title('about_header','Обо мне')
 			.about__left-content
@@ -36,18 +18,17 @@ block content
 					.user-description__title
 						.subtitle Кто я
 					.user-description__text
-						p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+						p Я веб разработчик из Новосибирска. Мне 27 лет. <br/>Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
 						p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
 		.about__right
 			.triangle.triangle_fill_beige.about__right-triangle
-				svg.triangle__svg(viewbox="0 0 1000 150" preserveAspectRatio="none")
-					polygon(points="1000,0 1000,150 0,150")
+				svg.triangle__svg(viewbox="0 0 1000 100" preserveAspectRatio="none")
+					polygon(points="0 100,1000 100,1000 0")
 			.about__right-title
 				.subtitle
 					|чем я могу быть <br/>
 					|вам полезен
-			.about__right-description
-				p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+			.about__right-description Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
 			.about__right-content
 					ul.skills-list
 						+skills('Frontend',frontend)
@@ -63,19 +44,5 @@ block content
 				each contact in contacts
 					li.contacts__item.contact-row
 						.contact-row__content(class=`icon icon-${contact.contactName}`) #{contact.contactValue}
-	footer.footer
-		.footer__row
-			.footer__col.footer__col_left
-				.footer__menu
-					+menu(menu)
-			.footer__col.footer__col_right
-				.footer__socials
-					+socials('rounded', socials)
-		.footer__row
-			.footer__col.footer__col_left
-				.footer__text
-					p Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
-			.footer__col.footer__col_right
-				.footer__text
-					p © Владимир Астахов | создано с любовью в LoftSchool | 2016
+	include ../blocks/footer
 

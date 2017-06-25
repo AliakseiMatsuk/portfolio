@@ -1,0 +1,244 @@
+.works {
+    @extend %clearfix;
+    &.section {
+        min-height: auto;
+        height: auto;
+        background: $beige;
+    }
+    &__left,
+    &__right {
+        float: left;
+        width: 50%;
+        min-height: 1px;
+        background-color: #faf8f1;
+        position: relative;
+    }
+    &__left-triangle {
+        left: 0;
+    }
+    &__row {
+        position: relative;
+    }
+    .works__slider {
+        position: relative;
+    }
+    &__tech {
+        padding: 18px 0;
+        text-align: center;
+        border-top: 1px solid #20b5a1;
+        border-bottom: 1px solid #20b5a1;
+    }
+    &__show-work {
+        text-align: center;
+    }
+}
+
+.work__desc {
+    width: 100%;
+    max-width: 420px;
+    @include centered();
+}
+
+.tech-list {
+    color: #20b5a1;
+    font-size: 0.985rem;
+    font-weight: 500;
+}
+
+.works-row {
+    &__title {
+        background-color: #faf8f1;
+        text-align: center;
+        padding-bottom: 25px;
+        .title {
+            padding-top: 55px;
+        }
+    }
+}
+
+.works-slider {
+    @extend %clearfix;
+    &__left,
+    &__right {
+        float: left;
+        width: 50%;
+        min-height: 1px;
+        position: relative;
+        min-height: 750px;
+    }
+    &__left {
+        background-color: #f1efea;
+        ;
+    }
+    &__right {
+        background-color: #efebe1;
+        ;
+    }
+}
+
+.slider-right {
+    &__top {
+        min-height: 525px;
+        position: relative;
+    }
+    &__top-pic {
+        @include centered();
+    }
+    &__bottom {
+        @extend %clearfix;
+        position: relative;
+    }
+    &__bottom-left,
+    &__bottom-right {
+        float: left;
+        width: 50%;
+        min-height: 225px;
+        position: relative;
+    }
+    &__nav {
+        @include centered();
+        cursor: pointer;
+        &.next {
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+    }
+    &__nav-pic {
+        width: 43px;
+        height: 27px;
+        fill: #fff;
+        opacity: .8;
+    }
+}
+
+.triangle_fill_works {
+    //background-color: #faf8f1;
+    .triangle__svg {
+        fill: #faf8f1;
+    }
+}
+
+.reviews {
+    &__title {
+        text-align: center;
+    }
+    &__row {
+        min-height: 230px;
+        position: relative;
+    }
+    &__list {
+        max-width: 780px;
+        width: 100%;
+        @include centered();
+    }
+    &__bg {
+        position: absolute;
+        top: 0;
+    }
+    &__form {
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    &__scroll-up {
+       text-align:center;
+       position: relative;
+       transform:rotate(180deg);
+    }
+}
+
+.reviews-list {
+    @extend %clearfix;
+    &__item {
+        float: left;
+        width: 50%;
+    }
+}
+
+.review {
+    &__text {
+        color: $mainTextColor;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.625;
+        text-align: left;
+    }
+    &__row {
+        position: relative;
+    }
+    &__title {
+        color: #20b5a1;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    &__subtitle {
+        color: #20b5a1;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    &__writer {
+        @extend %clearfix;
+    }
+    &__pic {
+        display: inline-block;
+        max-width: 77px;
+        max-height: 78px;
+        float: left;
+    }
+}
+
+.review-form {
+    position: relative;
+    margin: 0 auto;
+    max-width: 380px;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    &__title {
+        text-align: center;
+    }
+    &__list {
+        padding: 0 20px;
+    }
+    &__item {
+        margin-bottom: 20px;
+    }
+    &__input,
+    &__textarea {
+        border-radius: 5px;
+        background-color: #fff;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+    }
+    &__input {
+        height: 45px;
+    }
+    &__textarea {
+        padding-top: 15px;
+        height: 140px;
+    }
+    &__buttons {
+        @extend %clearfix;
+    }
+}
+
+.forms-button {
+    &__item {
+        display: inline-block;
+        float: left;
+        width: 50%;
+        border: none;
+        background-color: #298d8b;
+        transition: background-color .4s;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 500;
+        height: 45px;
+        &:first-child {
+            border-right: 2px solid rgba(222, 227, 231, 0.5);
+        }
+        &:hover {
+            background-color: #2fbcab;
+        }
+    }
+}
+

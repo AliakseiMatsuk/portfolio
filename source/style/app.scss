@@ -4,7 +4,6 @@
 @import "mixins/mixins";
 @import "common/base";
 @import 'common/sprite-img';
-
 @import 'blocks/about';
 @import 'blocks/arrow-down';
 @import 'blocks/title';
@@ -20,7 +19,53 @@
 @import 'blocks/footer';
 @import 'blocks/menu';
 @import 'blocks/socials';
+@import 'blocks/header';
+@import 'blocks/works';
+@import 'blocks/blog';
+@import 'blocks/login';
+.btn {
+    border-radius: 5px;
+    background-color: #00bfa5;
+    width: 100%;
+    max-width: 200px;
+    height: 45px;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
 
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 1rem;
+    font-weight: 400;
+    color:  rgba(55, 62, 66, 0.5);
+}
 
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 1rem;
+    font-weight: 400;
+    color:  rgba(55, 62, 66, 0.5);
+}
 
+:-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 1rem;
+    font-weight: 400;
+    color:  rgba(55, 62, 66, 0.5);
+}
 
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 1rem;
+    font-weight: 400;
+    color:  rgba(55, 62, 66, 0.5);
+}
+
+.arrow-scroll{
+    width:26px;
+    height:16px;
+    fill: #fff;
+    opacity: .8;
+}

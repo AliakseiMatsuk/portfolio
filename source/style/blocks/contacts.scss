@@ -1,57 +1,62 @@
 .contacts {
     width: 100%;
     max-width: 380px;
-    padding: 35px 40px;
+    padding: 28px 40px;
     border-radius: 5px;
     background-color: rgba(252, 252, 252, 0.85);
     width: 380px;
     height: 290px;
     @include centered();
     &__title {
-        margin-bottom: 40px;
+        margin-bottom: 32px;
         * {
             color: #373e42;
         }
     }
     &__list {}
-    &__item {}
+    &__title{
+        text-align:center;
+    }
+    &__item {
+        min-height: 24px;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .contact-row {
-    &:not(:last-child) {
-        margin-bottom: 20px;
-    }
     &__content {
         padding-left: 35px;
     }
 }
 
 .icon {
-	position:relative;
+    position: relative;
     &:before {
         content: '';
         display: inline-block;
-        position:absolute;
+        position: absolute;
         left: 0;
     }
     &-skype {
-    	&:before{
-        @include retina-sprite($skype-group);
-    	}
+        &:before {
+            @include retina-sprite($skype-group);
+        }
     }
     &-mail {
-    	&:before{
-        @include retina-sprite($envelope-group);
-    	}
+        &:before {
+            @include retina-sprite($envelope-group);
+        }
     }
     &-phone {
-    	&:before{
-        @include retina-sprite($phone-group);
-    	}
+        &:before {
+            @include retina-sprite($phone-group);
+        }
     }
     &-address {
-    	&:before{
-        @include retina-sprite($map_marker_small-group);
-    	}
+        &:before {
+            @include retina-sprite($map_marker_small-group);
+        }
     }
 }

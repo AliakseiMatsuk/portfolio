@@ -1,0 +1,20 @@
+section.section.hero
+	img.hero__bg(src="assets/img/bg/header-bg.png")
+	.hero__container
+		header.header.hero__header
+			.hero__socials
+				+socials('default',socials)
+			.hamburger.hero__menu
+		.arrow-down.hero__scroll-button
+			svg.arrow-down__pic
+				use(xlink:href="assets/img/sprite.svg#arrow-down")
+		.hero__title
+			.section-title
+				svg.section-title__pic
+					use(xlink:href="assets/img/sprite.svg#portfolio-header")
+			.user.hero__user
+				.user__pic
+					img(src="/assets/img/content/hero-photo.png", alt="").user__pic-img
+				.user__description
+					.user__name Владимир Астахов
+					.user__desc Личный сайт разработчика

@@ -1,6 +1,11 @@
 .hero {
     overflow: hidden;
-    background-color: wheat;
+    &.section{
+        @media (max-width: 1200px) {
+            height:600px;
+            min-height:auto;
+        }
+    }
     &__container {
         position: relative;
         height: 100%;
@@ -14,19 +19,20 @@
         right: 0;
         left: 0;
         @include centered(y);
+        margin-top: -35px;
     }
     &__user {
         @include centered();
         text-align: center;
     }
     &__scroll-button {
-        bottom: 50px;
+        bottom: 70px;
         @include centered(x);
     }
     &__socials{
     .socials__item {
         &:not(:last-child) {
-            margin-right:30px;
+            margin-right:24px;
         }
     }
     }
