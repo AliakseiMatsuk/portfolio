@@ -257,6 +257,7 @@
 }
 
 .forms-button {
+     @extend %clearfix;
     &__item {
         display: inline-block;
         float: left;
