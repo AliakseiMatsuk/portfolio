@@ -2,4 +2,4 @@ mixin menu(obj)
 	nav.menu
 			each link in obj
 				li.menu__item
-					a(href="#" title=`${link}`).menu__link #{link}
+					a.menu__link(href=`${link.linkHref}` title=`${link.linkTitle}`) #{link.linkTitle}

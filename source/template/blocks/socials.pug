@@ -2,7 +2,7 @@ mixin socials(iconType,items)
 	ul.socials
 		each item in items
 			li.socials__item
-				a(href="#")
+				a(href=`${item.socialLink}`, target='_blank')
 					if(iconType=='default')
 						svg.socials__pic(class=`socials__pic_${item.socialName}`)
 							use(xlink:href=`assets/img/sprite.svg#${item.socialName}`)
