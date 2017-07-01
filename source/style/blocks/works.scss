@@ -150,6 +150,10 @@
     &__bg {
         position: absolute;
         top: 0;
+        width:100%;
+    }
+    &__bg-pic{
+        width:100%;
     }
     &__form {
         border-radius: 5px;

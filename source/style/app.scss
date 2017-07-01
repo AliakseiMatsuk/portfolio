@@ -19,13 +19,14 @@
 
 input,
 textarea {
-    resize:none;
+    resize: none;
     @include input-placeholder {
         font-size: 1rem;
         font-weight: 400;
         color: rgba(55, 62, 66, 0.5);
     }
 }
+
 .arrow-scroll {
     width: 26px;
     height: 16px;

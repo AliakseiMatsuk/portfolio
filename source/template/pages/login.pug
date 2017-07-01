@@ -4,46 +4,32 @@ block variables
 	- var title = ['login','login','login']
 
 block content
-	.login-bg
-		.login-form
-			form
-				.login-form__title
-					.subtitle авторизуйтесь
-				.login-form__list
-					.login-form__item
-						span.login-icon
-						input.login-form__input.login(type="text",placeholder="Логин")
-					.login-form__item
-						span.password-icon
-						input.login-form__input(type="text", placeholder="Пароль")
-					.login__capcha
-						label Я человек
-						input(type="checkbox")
-					.login__robot.robot
-						.robot__title Вы точно не робот
-						ul
-							li.robot__item
-								label.robot__label Да
-								input(type="radio")
-							li.robot__item
-								label.robot__label Не уверен
-								input(type="radio")
-				.forms-button
-					a(href="#")
-						button.forms-button__item На главную
-					a(href="#")
-						input.forms-button__item(type="submit", value="Войти")
-		.welcome
-			.welcome-pic
-				img(src="", alt="")
-			.welcome__title Владимир Астахов
-			.welcome__subtitle Личный сайт веб разработчика
-			.welcome__socials
-				+socials('default',socials)
-			.forms-button
-				a(href="#")
-					button.forms-button__item(type="submit") Мои работы
-				a(href="#")
-					button.forms-button__item Обо мне
-				a(href="#")
-					button.forms-button__item Блог
+	main.main
+		img.main__bg(src="./assets/img/bg/header-bg.png")
+		.main__login
+			.login
+				a(href="#").login__title Авторизация
+		.main__card.main__card_active
+			.card-menu
+				.card-menu__wrapper
+					.card-menu__user
+						.user-login
+							.user-login__pic
+								img(src="./assets/img/content/hero-photo.png").user-login__pic-img
+							.user-login__description
+								.user-login__name.user-login__name_index Владимир Астахов
+								.user-login__info.user-login__info_index Личный сайт вебразработчика
+				.card-menu__socials
+					+socials('default',socials)
+				.card-menu__nav
+				nav.main-nav
+					ul.main-nav__list
+						li.main-nav__item.menu-nav__item
+							a(href="portfolio.html", class=`main-nav__link`) Мои работы
+						li.main-nav__item.menu-nav__item
+							a(href="index.html", class=`main-nav__link`) Обо мне
+						li.main-nav__item.menu-nav__item
+							a(href="blog.html", class=`main-nav__link`) Блог
+
+
+
