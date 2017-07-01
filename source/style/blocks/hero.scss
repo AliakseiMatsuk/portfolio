@@ -1,9 +1,9 @@
 .hero {
     overflow: hidden;
-    &.section{
+    &.section {
         @media (max-width: 1200px) {
-            height:600px;
-            min-height:auto;
+            height: 600px;
+            min-height: auto;
         }
     }
     &__container {
@@ -29,11 +29,17 @@
         bottom: 70px;
         @include centered(x);
     }
-    &__socials{
-    .socials__item {
-        &:not(:last-child) {
-            margin-right:24px;
+    &__socials {
+        display: inline-block;
+        .socials__item {
+            &:not(:last-child) {
+                margin-right: 24px;
+            }
         }
     }
+    &__menu{
+        position:absolute;
+        right:30px;
+        display: inline-block;
     }
 }
