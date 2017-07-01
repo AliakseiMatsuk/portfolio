@@ -1,0 +1,41 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(55, 62, 66, 0.85);
+    &__row {
+        @extend %clearfix;
+        padding:14px 30px;
+        &:first-child {
+            padding:15px 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, .2)
+        }
+    }
+    &__col {
+        width: 50%;
+        &_left {
+            float: left;
+            text-align: left;
+        }
+        &_right {
+            float: right;
+            text-align: right;
+        }
+    }
+    &__socials {
+        .socials__item {
+            &:not(:last-child) {
+                margin-right:6px;
+            }
+        }
+    }
+    &__menu{
+        padding-top: 10px;
+    }
+    &__text {
+        font-size: 1rem;
+        color: #fff;
+        opacity: .5;
+        line-height:1.5;
+    }
+}

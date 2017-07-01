@@ -1,6 +1,48 @@
 extends ../_template
 
 block variables
-	- var title = ['title','keywords','description']
-
+	- var title = ['About me','About me','About me']
 block content
+	include ../blocks/hero
+	section.section.about
+		.about__left
+			.triangle.triangle_fill_white.about__left-triangle
+				svg.triangle__svg(viewbox="0 0 1000 100" preserveAspectRatio="none")
+					polygon(points="0 100,1000 100,0 0")
+			.about__left-title
+				+title('about_header','Обо мне')
+			.about__left-content
+				.user-description
+					.user-description__image
+						img.user-description__avatar(src="assets/img/content/user-avatar.png", alt="Владимир Астахов" title="Владимир Астахов")
+					.user-description__title
+						.subtitle Кто я
+					.user-description__text
+						p Я веб разработчик из Новосибирска. Мне 27 лет. <br/>Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+						p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+		.about__right
+			.triangle.triangle_fill_beige.about__right-triangle
+				svg.triangle__svg(viewbox="0 0 1000 100" preserveAspectRatio="none")
+					polygon(points="0 100,1000 100,1000 0")
+			.about__right-title
+				.subtitle
+					|чем я могу быть <br/>
+					|вам полезен
+			.about__right-description Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+			.about__right-content
+					ul.skills-list
+						+skills('Frontend',frontend)
+						+skills('Backend',backend)
+						+skills('WorkFlow',workflow)
+	section.section.map
+		.google-map
+			img(src="assets/img/bg/map.png")
+		.contacts
+			.contacts__title
+				.subtitle Контакты
+			ul.contacts__list
+				each contact in contacts
+					li.contacts__item.contact-row
+						.contact-row__content(class=`icon icon-${contact.contactName}`) #{contact.contactValue}
+	include ../blocks/footer
+

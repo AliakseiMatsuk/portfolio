@@ -1,0 +1,25 @@
+.subtitle {
+    font-size: 2.1875rem;
+    color: $subTitleColor;
+    padding: 0 40px;
+    position: relative;
+    display: inline-block;
+    //max-width: 390px;
+    text-align:center;
+    @include bernier;
+    &:after,
+    &:before {
+        content: "";
+        display: block;
+        @include centered(y);
+        width: 22px;
+        height: 5px;
+        background: rgba($titleColor, .2);
+    }
+    &:after {
+        right: 0;
+    }
+    &:before {
+        left: 0;
+    }
+}

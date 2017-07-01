@@ -1,0 +1,31 @@
+.socials {
+    display: inline-block;
+    &__item {
+        display: inline-block;
+    }
+    &__pic {
+        fill: rgba(255, 255, 255, .4);
+        transition: all .5s;
+        &:hover {
+            fill: rgba(255, 255, 255, 1);
+        }
+        &_round {
+          width: 36px;
+          height: 36px;
+          //-webkit-filter: invert(100%);
+        	//filter: invert(100%);
+        }
+        &_vk {
+            width: 31px;
+            height: 17px;
+        }
+        &_github {
+            width: 26px;
+            height: 22px;
+        }
+        &_in {
+            width: 24px;
+            height: 22px;
+        }
+    }
+}

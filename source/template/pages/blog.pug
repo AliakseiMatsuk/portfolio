@@ -1,6 +1,65 @@
 extends ../_template
 
 block variables
-	- var title = ['title','keywords','description']
+	- var title = ['blog','blog','blog']
 
 block content
+	section.section.hero.blog-head
+		img.hero__bg(src="assets/img/bg/header-bg.png")
+		.hero__container
+			header.header.hero__header
+				.hero__socials
+					+socials('rounded',socials)
+				.hamburger.hero__menu
+					.hamburger-icon
+						span.hamburger-icon__line.hamburger-icon__line-top
+						span.hamburger-icon__line.hamburger-icon__line-middle
+						span.hamburger-icon__line.hamburger-icon__line-bottom
+			.arrow-down.hero__scroll-button
+				svg.arrow-down__pic
+					use(xlink:href="assets/img/sprite.svg#arrow-down")
+			.hero__title
+				.section-title
+					.user.hero__user
+						.user__pic
+							img(src="/assets/img/content/hero-photo.png", alt="").user__pic-img
+							.blog-header__title
+								+title('works_header','Блог')
+							.blog-header__subtitle Статьи, которые я написал
+	section.section.blog
+		.blog-top__left
+			.triangle.triangle_fill_blog.works__left-triangle
+				svg.triangle__svg(viewbox="0 0 1000 100" preserveAspectRatio="none")
+					polygon(points="0 100,1000 100,0 0")
+		.blog-top__right
+			.triangle.triangle_fill_blog.works__right-triangle
+				svg.triangle__svg(viewbox="0 0 1000 100" preserveAspectRatio="none")
+					polygon(points="0 100,1000 100,1000 0")
+		.blog__left
+			.blog__list-nav
+				ul.post-list-nav
+					li.post-list-nav__item.post-list-nav__item_active Самое важное в SASS
+					li.post-list-nav__item Приёмы в вёрстке, без которых не обходится ни один сайт
+					li.post-list-nav__item Самый необходимый набор Gulp плагинов
+					li.post-list-nav__item Почему я выбрал Jade
+		.blog__right.blog-right
+			ul.blog-list
+				li.blog-list__item
+					article.post
+						.post__title Самое важное в SASS
+						.post__time 22 ноября 2016
+						.post__content
+							p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+							p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+							p.codepen(data-height='150', data-theme-id='light', data-slug-hash='aIuko', data-default-tab='css', data-embed-version='2', data-pen-title='Loading animation with keyframe for SCSS & Jade.')
+							script(async src='https://production-assets.codepen.io/assets/embed/ei.js')
+				li.blog-list__item
+					article.post
+						.post__title Приёмы в вёрстке, без которых не обходится ни один сайт
+						.post__time 13 ноября 2016
+						.post__content
+							p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+							p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+	include ../blocks/footer
+
+

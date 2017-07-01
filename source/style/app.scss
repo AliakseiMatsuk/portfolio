@@ -1,5 +1,35 @@
-body {
-  margin: 0;
+//includes
+@import "mixins/mixins";
+@import 'common/variables';
+@import "common/fonts";
+@import "common/base";
+@import 'common/sprite-img';
+@import 'blocks/**/*';
+.btn {
+    border-radius: 5px;
+    background-color: #00bfa5;
+    width: 100%;
+    max-width: 200px;
+    height: 45px;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
-//@import 'common/sprite-img';
+input,
+textarea {
+    resize: none;
+    @include input-placeholder {
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(55, 62, 66, 0.5);
+    }
+}
+
+.arrow-scroll {
+    width: 26px;
+    height: 16px;
+    fill: #fff;
+    opacity: .8;
+}

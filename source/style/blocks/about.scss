@@ -1,0 +1,41 @@
+.about {
+    @extend %clearfix;
+    &.section{
+        min-height:auto;
+        height:auto;
+        background: $beige;
+    }
+    &__left,
+    &__right {
+        float: left;
+        width: 50%;
+        position: relative;
+    }
+    &__left {
+        background: $white;
+        padding:20px;
+    }
+    &__left-title{
+        margin-top: -60px;
+        text-align:center;
+    }
+    &__left-triangle{
+    	left:0;
+    }
+    &__right {
+        background: $beige;
+        padding: 20px 0 0 40px;
+    }
+    &__right-triangle{
+    	right:0;
+    }
+    &__right-description{
+        line-height:1.5;
+        margin-bottom:50px;
+    }
+    &__right-title{
+        margin-top: -8px;
+    	text-align:center;
+        margin-bottom:30px;
+    }
+}

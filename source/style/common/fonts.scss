@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic');
+
+@font-face {
+	font-family: 'Bernier';
+	src: url('/assets/fonts/Bernier-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin bernier() {
+	font-family: 'Bernier', serif;
+}
+@mixin roboto() {
+font-family: 'Roboto', sans-serif;
+}
+

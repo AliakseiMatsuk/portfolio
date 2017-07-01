@@ -1,0 +1,298 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$envelope-name: 'envelope';
+$envelope-x: 0px;
+$envelope-y: 45px;
+$envelope-offset-x: 0px;
+$envelope-offset-y: -45px;
+$envelope-width: 23px;
+$envelope-height: 17px;
+$envelope-total-width: 107px;
+$envelope-total-height: 62px;
+$envelope-image: '../img/sprite-img.png';
+$envelope: (0px, 45px, 0px, -45px, 23px, 17px, 107px, 62px, '../img/sprite-img.png', 'envelope', );
+$login-name: 'login';
+$login-x: 88px;
+$login-y: 45px;
+$login-offset-x: -88px;
+$login-offset-y: -45px;
+$login-width: 15px;
+$login-height: 17px;
+$login-total-width: 107px;
+$login-total-height: 62px;
+$login-image: '../img/sprite-img.png';
+$login: (88px, 45px, -88px, -45px, 15px, 17px, 107px, 62px, '../img/sprite-img.png', 'login', );
+$map-marker-name: 'map_marker';
+$map-marker-x: 0px;
+$map-marker-y: 0px;
+$map-marker-offset-x: 0px;
+$map-marker-offset-y: 0px;
+$map-marker-width: 30px;
+$map-marker-height: 40px;
+$map-marker-total-width: 107px;
+$map-marker-total-height: 62px;
+$map-marker-image: '../img/sprite-img.png';
+$map-marker: (0px, 0px, 0px, 0px, 30px, 40px, 107px, 62px, '../img/sprite-img.png', 'map_marker', );
+$map-marker-small-name: 'map_marker_small';
+$map-marker-small-x: 64px;
+$map-marker-small-y: 0px;
+$map-marker-small-offset-x: -64px;
+$map-marker-small-offset-y: 0px;
+$map-marker-small-width: 19px;
+$map-marker-small-height: 24px;
+$map-marker-small-total-width: 107px;
+$map-marker-small-total-height: 62px;
+$map-marker-small-image: '../img/sprite-img.png';
+$map-marker-small: (64px, 0px, -64px, 0px, 19px, 24px, 107px, 62px, '../img/sprite-img.png', 'map_marker_small', );
+$password-name: 'password';
+$password-x: 88px;
+$password-y: 23px;
+$password-offset-x: -88px;
+$password-offset-y: -23px;
+$password-width: 18px;
+$password-height: 17px;
+$password-total-width: 107px;
+$password-total-height: 62px;
+$password-image: '../img/sprite-img.png';
+$password: (88px, 23px, -88px, -23px, 18px, 17px, 107px, 62px, '../img/sprite-img.png', 'password', );
+$phone-name: 'phone';
+$phone-x: 88px;
+$phone-y: 0px;
+$phone-offset-x: -88px;
+$phone-offset-y: 0px;
+$phone-width: 19px;
+$phone-height: 18px;
+$phone-total-width: 107px;
+$phone-total-height: 62px;
+$phone-image: '../img/sprite-img.png';
+$phone: (88px, 0px, -88px, 0px, 19px, 18px, 107px, 62px, '../img/sprite-img.png', 'phone', );
+$skype-name: 'skype';
+$skype-x: 35px;
+$skype-y: 0px;
+$skype-offset-x: -35px;
+$skype-offset-y: 0px;
+$skype-width: 24px;
+$skype-height: 24px;
+$skype-total-width: 107px;
+$skype-total-height: 62px;
+$skype-image: '../img/sprite-img.png';
+$skype: (35px, 0px, -35px, 0px, 24px, 24px, 107px, 62px, '../img/sprite-img.png', 'skype', );
+$envelope-2x-name: 'envelope@2x';
+$envelope-2x-x: 0px;
+$envelope-2x-y: 90px;
+$envelope-2x-offset-x: 0px;
+$envelope-2x-offset-y: -90px;
+$envelope-2x-width: 46px;
+$envelope-2x-height: 34px;
+$envelope-2x-total-width: 214px;
+$envelope-2x-total-height: 124px;
+$envelope-2x-image: '../img/sprite-img@2x.png';
+$envelope-2x: (0px, 90px, 0px, -90px, 46px, 34px, 214px, 124px, '../img/sprite-img@2x.png', 'envelope@2x', );
+$login-2x-name: 'login@2x';
+$login-2x-x: 176px;
+$login-2x-y: 90px;
+$login-2x-offset-x: -176px;
+$login-2x-offset-y: -90px;
+$login-2x-width: 30px;
+$login-2x-height: 34px;
+$login-2x-total-width: 214px;
+$login-2x-total-height: 124px;
+$login-2x-image: '../img/sprite-img@2x.png';
+$login-2x: (176px, 90px, -176px, -90px, 30px, 34px, 214px, 124px, '../img/sprite-img@2x.png', 'login@2x', );
+$map-marker-2x-name: 'map_marker@2x';
+$map-marker-2x-x: 0px;
+$map-marker-2x-y: 0px;
+$map-marker-2x-offset-x: 0px;
+$map-marker-2x-offset-y: 0px;
+$map-marker-2x-width: 60px;
+$map-marker-2x-height: 80px;
+$map-marker-2x-total-width: 214px;
+$map-marker-2x-total-height: 124px;
+$map-marker-2x-image: '../img/sprite-img@2x.png';
+$map-marker-2x: (0px, 0px, 0px, 0px, 60px, 80px, 214px, 124px, '../img/sprite-img@2x.png', 'map_marker@2x', );
+$map-marker-small-2x-name: 'map_marker_small@2x';
+$map-marker-small-2x-x: 128px;
+$map-marker-small-2x-y: 0px;
+$map-marker-small-2x-offset-x: -128px;
+$map-marker-small-2x-offset-y: 0px;
+$map-marker-small-2x-width: 38px;
+$map-marker-small-2x-height: 48px;
+$map-marker-small-2x-total-width: 214px;
+$map-marker-small-2x-total-height: 124px;
+$map-marker-small-2x-image: '../img/sprite-img@2x.png';
+$map-marker-small-2x: (128px, 0px, -128px, 0px, 38px, 48px, 214px, 124px, '../img/sprite-img@2x.png', 'map_marker_small@2x', );
+$password-2x-name: 'password@2x';
+$password-2x-x: 176px;
+$password-2x-y: 46px;
+$password-2x-offset-x: -176px;
+$password-2x-offset-y: -46px;
+$password-2x-width: 36px;
+$password-2x-height: 34px;
+$password-2x-total-width: 214px;
+$password-2x-total-height: 124px;
+$password-2x-image: '../img/sprite-img@2x.png';
+$password-2x: (176px, 46px, -176px, -46px, 36px, 34px, 214px, 124px, '../img/sprite-img@2x.png', 'password@2x', );
+$phone-2x-name: 'phone@2x';
+$phone-2x-x: 176px;
+$phone-2x-y: 0px;
+$phone-2x-offset-x: -176px;
+$phone-2x-offset-y: 0px;
+$phone-2x-width: 38px;
+$phone-2x-height: 36px;
+$phone-2x-total-width: 214px;
+$phone-2x-total-height: 124px;
+$phone-2x-image: '../img/sprite-img@2x.png';
+$phone-2x: (176px, 0px, -176px, 0px, 38px, 36px, 214px, 124px, '../img/sprite-img@2x.png', 'phone@2x', );
+$skype-2x-name: 'skype@2x';
+$skype-2x-x: 70px;
+$skype-2x-y: 0px;
+$skype-2x-offset-x: -70px;
+$skype-2x-offset-y: 0px;
+$skype-2x-width: 48px;
+$skype-2x-height: 48px;
+$skype-2x-total-width: 214px;
+$skype-2x-total-height: 124px;
+$skype-2x-image: '../img/sprite-img@2x.png';
+$skype-2x: (70px, 0px, -70px, 0px, 48px, 48px, 214px, 124px, '../img/sprite-img@2x.png', 'skype@2x', );
+$spritesheet-width: 107px;
+$spritesheet-height: 62px;
+$spritesheet-image: '../img/sprite-img.png';
+$spritesheet-sprites: ($envelope, $login, $map-marker, $map-marker-small, $password, $phone, $skype, );
+$spritesheet: (107px, 62px, '../img/sprite-img.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 214px;
+$retina-spritesheet-height: 124px;
+$retina-spritesheet-image: '../img/sprite-img@2x.png';
+$retina-spritesheet-sprites: ($envelope-2x, $login-2x, $map-marker-2x, $map-marker-small-2x, $password-2x, $phone-2x, $skype-2x, );
+$retina-spritesheet: (214px, 124px, '../img/sprite-img@2x.png', $retina-spritesheet-sprites, );
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+//
+// The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+$envelope-group-name: 'envelope';
+$envelope-group: ('envelope', $envelope, $envelope-2x, );
+$login-group-name: 'login';
+$login-group: ('login', $login, $login-2x, );
+$map-marker-group-name: 'map_marker';
+$map-marker-group: ('map_marker', $map-marker, $map-marker-2x, );
+$map-marker-small-group-name: 'map_marker_small';
+$map-marker-small-group: ('map_marker_small', $map-marker-small, $map-marker-small-2x, );
+$password-group-name: 'password';
+$password-group: ('password', $password, $password-2x, );
+$phone-group-name: 'phone';
+$phone-group: ('phone', $phone, $phone-2x, );
+$skype-group-name: 'skype';
+$skype-group: ('skype', $skype, $skype-2x, );
+$retina-groups: ($envelope-group, $login-group, $map-marker-group, $map-marker-small-group, $password-group, $phone-group, $skype-group, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+//   It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+//
+// .icon-home {
+//   @include retina-sprite($icon-home-group);
+// }
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+//   This yields the same output as CSS retina template but can be overridden in SCSS
+//
+// @include retina-sprites($retina-groups);
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

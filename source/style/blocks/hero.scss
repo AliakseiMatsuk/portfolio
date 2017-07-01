@@ -1,0 +1,45 @@
+.hero {
+    overflow: hidden;
+    &.section {
+        @media (max-width: 1200px) {
+            height: 600px;
+            min-height: auto;
+        }
+    }
+    &__container {
+        position: relative;
+        height: 100%;
+    }
+    &__bg {
+        width: 1920px;
+        position: absolute;
+        display: block;
+    }
+    &__title {
+        right: 0;
+        left: 0;
+        @include centered(y);
+        margin-top: -35px;
+    }
+    &__user {
+        @include centered();
+        text-align: center;
+    }
+    &__scroll-button {
+        bottom: 70px;
+        @include centered(x);
+    }
+    &__socials {
+        display: inline-block;
+        .socials__item {
+            &:not(:last-child) {
+                margin-right: 24px;
+            }
+        }
+    }
+    &__menu{
+        position:absolute;
+        right:30px;
+        display: inline-block;
+    }
+}

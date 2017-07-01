@@ -1,0 +1,26 @@
+.title {
+  font-size: 3.9375rem;
+  color: $titleColor;
+  @include bernier();
+  padding: 45px 85px;
+  position: relative;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &:after, &:before {
+    content: "";
+    display: block;
+    @include centered(y);
+    width: 22px;
+    height: 5px;
+    background: rgba($titleColor, .2);
+  }
+  &:after {
+    right: 30px;
+  }
+  &:before {
+    left: 30px;
+  }
+}
